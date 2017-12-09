@@ -264,11 +264,7 @@ def assembleBfFile(input):
         print (headers)
         return headers
 
-        
-        
-        
     # fire the functions
-    
     line_list, pure_list = splitFile()    
     countLabels(line_list)
     label_list = structureCheck(line_list, pure_list)
@@ -277,10 +273,8 @@ def assembleBfFile(input):
     headers = createHeaders(label_bytes, instruction_bytes)
     output_file = headers + label_bytes + instruction_bytes
     with open(args.output, "wb") as outp:
-        outp.write(output_file)    
-    
+        outp.write(output_file)   
     return
-    
     
 args = getArgs()
 file_output = assembleBfFile(args.input)
