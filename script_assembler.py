@@ -1,5 +1,4 @@
 # much of this is taken from lumen's unpack_ai, but none of it is directly copied from it
-# currently only works for battle AI scripts. will need to rework some of it to work with dungeon scripts.
 
 import argparse
 import struct
